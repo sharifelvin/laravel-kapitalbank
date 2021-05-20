@@ -1,0 +1,42 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class CreatePaymentsTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('payments', function (Blueprint $table) {
+            $table->id();
+            $table->string('order_id');
+            $table->string('session_id')->nullable();
+            $table->string('currency')->nullable();
+            $table->string('order_status')->nullable();
+            $table->string('order_description')->nullable();
+            $table->string('amount');
+            $table->string('payment_url')->nullable();
+            $table->string('status_code')->nullable();
+            $table->string('order_check_status')->nullable();
+            $table->string('language_code')->nullable();
+
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('posts');
+    }
+}

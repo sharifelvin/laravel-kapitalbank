@@ -1,0 +1,49 @@
+{
+    "name": "sharifelvin/laravel-kapitalbank",
+    "description": "Kapital Bank Transfer is payment gateway package for Azerbaijan's Kapital Bank in PHP Laravel.",
+    "type": "library",
+    "require": {
+        "php": "^7.1",
+        "illuminate/support": ">=6.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^4.0",
+        "phpunit/phpunit": "^8.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Elvin Sharifov",
+            "email": "sharifelvin@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "SharifElvin\\KapitalBankTransfer\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "SharifElvin\\KapitalBankTransfer\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SharifElvin\\KapitalBankTransfer\\KapitalBankTransferServiceProvider"
+            ],
+            "aliases": {
+                "KapitalBankTransfer": "SharifElvin\\KapitalBankTransfer\\KapitalBankTransferFacade"
+            }
+        }
+    },
+    "minimum-stability": "stable"
+}
