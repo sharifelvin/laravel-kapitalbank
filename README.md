@@ -1,7 +1,5 @@
 # Kapital Bank Payment Gateway for Laravel
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/sharifelvin/laravel-kapitalbank.svg?style=flat-square)](https://packagist.org/packages/sharifelvin/laravel-kapitalbank)
-[![Total Downloads](https://img.shields.io/packagist/dt/sharifelvin/laravel-kapitalbank.svg?style=flat-square)](https://packagist.org/packages/sharifelvin/laravel-kapitalbank)
 
 Kapital Bank Transfer is a laravel package for Azerbaijan's Kapital Bank Payment gateway. 
 
